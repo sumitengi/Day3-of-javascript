@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var mark1 = Number(prompt('Enter your mark1'))
+    var mark2 = Number(prompt('Enter your mark2'))
+    var mark3 = Number(prompt('Enter your mark3'))
+    var mark4 = Number(prompt('Enter your mark4'))
+    var mark5 = Number(prompt('Enter your mark5'))
+    var total = mark1+mark2+mark3+mark4+mark5
+    var percentage = total/500*100
+    document.write('Total marks ='+total+'<br>')
+    document.write('percentage ='+percentage+'%<br>')
+
+    if(mark1>100 || mark2>100 || mark3>100 || mark4>100 || mark5>100){
+        document.write('invalid marks')
+    }
+    else if(mark1<36 || mark2<36 || mark3<36 || mark4<36 || mark5<36){
+       document.write('student fail')
+    }
+    else if(percentage>=90){
+        document.write('First division')
+    }
+    else if(percentage>=70){
+        document.write('second division')
+    }
+    else if(percentage>=50){
+        document.write('third division')
+    }
+</script>
+</html>
